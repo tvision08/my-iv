@@ -1,0 +1,20 @@
+{
+  "MyCloudantDB": {
+    "credentials": {
+      "searchPatterns": [
+        "cloudfoundry:cloudant",
+        "env:kube_cloudant_credentials",
+        "file:config/my-cloudant-credentials.json"
+      ]
+    }
+  },
+  "MyMongoDB": {
+    "credentials": {
+      "searchPatterns": [
+        "cloudfoundry:mongodb",
+        "env:kube_mongodb_credentials",
+        "file:config/my-mongo-credentials.json"
+      ]
+    }
+  }
+}
